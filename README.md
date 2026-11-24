@@ -12,7 +12,7 @@ Power on the raspberry pi and load up the terminal.
 
 <h2>Software setup</h2>
 
-Set up a virtual environment and install the relevant libraries for help with this follow this link.
+Set up a virtual environment and install the relevant libraries for help with this follow [this link](https://github.com/kingston-hackSpace/Virtual-Environments__RaspberryPi).
 
 Load the python script above into the terminal. Either download or copy and paste into a script editor such as nano or py.
 
