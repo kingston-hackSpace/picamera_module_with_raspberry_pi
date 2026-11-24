@@ -1,6 +1,6 @@
-<h1>How to create an video feed using a pycamera module</h1>
+<h1>How to create an video feed using a picamera module</h1>
 
-The pycamera can be connected to the raspberry pi board to allow inputs from the camera to be processed either as stills, or video footage. 
+The picamera can be connected to the raspberry pi board to allow inputs from the camera to be processed either as stills, or video footage. 
 
 <h2>Hardware setup</h2>
 
@@ -18,10 +18,22 @@ Load the python script above into the terminal. Either download or copy and past
 
 To run the script type
 
-```python3 camera_test_2.py```
+```python3 camera_test.py```
 
 You should see the camera input displayed on the screen as a real time updated image.
 
+<h2>How the script works</h2>
+
+The script makes use of the pycamera library. Using this, the pycamera object is declared, then the preview is loaded. 
+
+<h2>Using the camera feed</h2>
+
+Once you can load the camera feed, you can capture the data and do different things with it.
+
+Download the camera_grid script and run it through the terminal
+
+```python3 camera_grid.py```
+
 <h2>How the script works.</h2>
 
-The picam object referenced in the script returns a rectangle of pixel data as two dimensional array. This data is then sent to a window which is declared, where the pixel data is drawn to the screen. This process happens every cycle so the image updates and a the input from the camera updates in real time.
+The pycam object referenced in the script returns a rectangle of pixel data as two dimensional array. This data is then sent to a window which is declared, where the pixel data goes through a transformation then the result is drawn to the screen. This process happens every cycle so the image updates and a the input from the camera updates in real time.
